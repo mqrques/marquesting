@@ -1,0 +1,202 @@
+body {
+    background-color: #0f0f14;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NavBar */
+.brand-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Hero */
+.hero {
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #cfcfcf;
+}
+
+/* About */
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #cfcfcf;
+}
+
+/* Projects */
+.projects {
+    padding: 6rem 0;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #cfcfcf;
+}
+
+.projects h3 {
+    color: #bdbdbd;
+}
+
+.project-card {
+    background: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.project-card p {
+    color: #bdbdbd;
+    font-size: .95rem;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: 500;
+    opacity: .8;
+    color: #bdbdbd;
+}
+
+/* Hover Animation nos Cards */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Contact */
+.contact {
+    background-color: #0f0f14;
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #cfcfcf;
+}
+
+.contact .btn {
+    min-width: 150px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.contact .btn:hover {
+    background-color: #fff;
+    color: #0f0f14;
+    transform: scale(1.05);
+}
+
+/* Formulário */
+.contact input,
+.contact textarea {
+    background-color: #1a1a1f;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #fff;
+    box-shadow: none;
+    background-color: #1a1a1f;
+    color: #fff;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-body img {
+    transition: transform 0.3s ease;
+}
+
+.modal-body img:hover {
+    transform: scale(1.03);
+}
+
+/* Botão voltar ao topo */
+a.btn.position-fixed {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+a.btn.position-fixed.show {
+    opacity: 1;
+}
+#backToTop {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #0f0f14;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+#backToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .brand-logo {
+        font-size: 1.4rem;
+    }
+}
